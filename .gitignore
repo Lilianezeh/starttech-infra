@@ -1,11 +1,20 @@
 # Terraform
 .terraform/
-terraform.tfstate
-terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
 *.tfvars
 !terraform.tfvars.example
 .terraform.lock.hcl
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
 # Secrets
 *.pem
 *.key
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
