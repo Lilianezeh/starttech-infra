@@ -1,0 +1,6 @@
+aws_region    = "us-east-1"
+project_name  = "starttech"
+instance_type = "t3.micro"
+mongo_uri     = "mongodb+srv://user:pass@cluster.mongodb.net/much_todo_db"
+jwt_secret    = "StartTechJWTSecret2024"
+ecr_image_uri = "346133363198.dkr.ecr.us-east-1.amazonaws.com/muchtodo-backend:latest"

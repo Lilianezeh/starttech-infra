@@ -1,0 +1,22 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "properties": {
+        "title": "Backend CPU Utilization",
+        "metrics": [["AWS/EC2", "CPUUtilization"]],
+        "period": 300,
+        "stat": "Average",
+        "region": "us-east-1"
+      }
+    },
+    {
+      "type": "log",
+      "properties": {
+        "title": "Backend Application Logs",
+        "query": "SOURCE '/starttech/backend' | fields @timestamp, @message | sort @timestamp desc | limit 20",
+        "region": "us-east-1"
+      }
+    }
+  ]
+}

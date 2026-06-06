@@ -1,0 +1,11 @@
+# Error logs
+SOURCE '/starttech/backend'
+| filter level = "ERROR"
+| fields @timestamp, msg, error
+| sort @timestamp desc
+| limit 50
+
+# Request logs
+SOURCE '/starttech/backend'
+| filter msg = "request completed"
+| stats count() by status
