@@ -51,3 +51,4 @@ JWT_SECRET
 - **storage**: S3 bucket, CloudFront distribution
 - **monitoring**: CloudWatch log groups and alarms
 # trigger workflow
+# Infrastructure deployment automated via GitHub Actions
